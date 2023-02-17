@@ -1,3 +1,9 @@
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -19,4 +25,15 @@ body {
   color: rgba(189, 189, 189, 1);
   margin: 0.6rem 0 2rem 0;
   display: block;
+}
+
+.loading__anim {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 5px solid rgba(189, 189, 189, 0.25);
+  border-left-color: rgba(3, 155, 229, 1);
+  border-top-color: rgba(3, 155, 229, 1);
+  border-radius: 50%;
+  animation: rotate 1000ms infinite linear;
 }
